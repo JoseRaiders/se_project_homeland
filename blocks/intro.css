@@ -1,0 +1,38 @@
+.intro {
+  margin: 0;
+  padding: 0 0 118px 148px;
+}
+
+.intro__heading {
+  max-width: 785px;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -0.6px;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.intro__quote {
+  max-width: 720px;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 32px;
+  text-wrap: wrap;
+}
+
+.intro__span {
+  display: block;
+  text-align: right;
+  margin: 0;
+}
+
+.intro__copy {
+  max-width: 720px;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
