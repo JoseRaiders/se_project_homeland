@@ -2,3 +2,16 @@
   margin: 0;
   padding: 0 48px 92px;
 }
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
