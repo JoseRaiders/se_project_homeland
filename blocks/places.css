@@ -1,17 +1,20 @@
 .places {
-  padding: 0 148px;
+  max-width: 987px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .places__container {
   max-width: 987px;
-  max-height: 756px;
   margin-bottom: 80px;
-}
-
-.places__headline {
-  display: flex;
-  align-items: flex-end;
-  column-gap: 40px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 25px 40px;
+  grid-template-areas:
+    "title details"
+    "image paragraphs"
+    "button paragraphs";
 }
 
 .places__title {
@@ -21,10 +24,19 @@
   line-height: 76px;
   text-align: left;
   margin: 0;
+  padding: 0;
+  grid-area: title;
+}
+
+.places__details {
+  align-self: end;
+  margin: 0;
+  padding: 0;
+  grid-area: details;
 }
 
 .places__subtitle {
-  max-width: 456px;
+  max-width: 50px;
   margin: 0;
   padding-bottom: 8px;
   text-transform: uppercase;
@@ -35,22 +47,23 @@
 }
 
 .places__artist {
-  margin: 0;
+  max-width: 456px;
   font-size: 18px;
   line-height: 22px;
-}
-
-.places__content {
-  display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  padding: 48px 0;
-  column-gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .places__images {
   height: 460px;
   width: 460px;
+  grid-area: image;
+}
+
+.place__paragraphs {
+  display: flex;
+  flex-direction: column;
+  grid-area: paragraphs;
 }
 
 .places__paragraph {
@@ -70,11 +83,18 @@
   background-color: #0278fe;
   color: #fff;
   border-radius: 4px;
+  margin-top: 23px;
   padding: 13px 20px;
   font-size: 18px;
+  font-style: normal;
   font-weight: 600;
   text-align: center;
   border: none;
   text-decoration: none;
   cursor: pointer;
+  grid-area: button;
+}
+
+.places__button:nth-child(4) {
+  margin-top: 0;
 }
