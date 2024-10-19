@@ -1,6 +1,7 @@
 .intro {
-  margin: 0;
-  padding: 0 0 118px 148px;
+  max-width: 984px;
+  margin: 0 auto 118px;
+  padding: 0;
 }
 
 .intro__title {

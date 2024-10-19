@@ -1,6 +1,7 @@
 .gallery {
-  margin: 0;
-  padding: 0 48px 92px;
+  max-width: 1184px;
+  margin: 0 auto 92px;
+  padding: 0;
 }
 
 .gallery__container {
