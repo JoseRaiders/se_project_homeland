@@ -55,10 +55,9 @@
   padding: 0;
 }
 
-.places__images {
+.places__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   grid-area: image;
 }
 
@@ -105,7 +104,8 @@
 
   .places__container {
     max-width: 720px;
-    margin-bottom: 72px;
+    margin: 0;
+    padding-bottom: 72px;
     gap: 46px 28px;
   }
 
@@ -119,7 +119,7 @@
     max-width: 316px;
   }
 
-  .places__images {
+  .places__image {
     height: 340px; /* fixed height for the images */
   }
 

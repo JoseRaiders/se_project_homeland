@@ -1,7 +1,7 @@
 .cover {
   max-width: 1184px;
   height: 740px;
-  background: url(../images/cover_background.jpg) no-repeat center;
+  background: url(../images/cover_background.jpg) center no-repeat;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -69,3 +69,14 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+/* viewports between 1279px and 768px wide */
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1279px) {
+  .cover {
+    max-width: 768px;
+    height: auto;
+    margin: 0;
+    padding: 92px 0 88px 0;
+    background: url(../images/cover_background.jpg) contain / 100% no-repeat;
+  }
+} */
