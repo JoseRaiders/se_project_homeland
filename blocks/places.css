@@ -107,7 +107,7 @@
     margin: 0;
     padding-bottom: 72px;
     gap: 46px 28px;
-    grid-template-rows: auto 340px auto; /* set the row with the image to 460px */
+    grid-template-rows: auto 340px auto; /* set the row with the image to 340px */
   }
 
   .places__title {
