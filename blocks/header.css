@@ -9,3 +9,17 @@
   height: 70px;
   margin: 0 auto 90px;
 }
+
+/* viewports between 767px and 320px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .header {
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+
+  .header__logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 50px;
+  }
+}

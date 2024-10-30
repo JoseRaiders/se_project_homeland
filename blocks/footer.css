@@ -10,3 +10,10 @@
     margin: 88px 0 0;
   }
 }
+
+/* viewports between 767px and 320px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .footer__copyright {
+    margin-top: 64px;
+  }
+}

@@ -1,6 +1,6 @@
 .places {
   max-width: 987px;
-  margin: 0 auto;
+  margin: 0 auto 92px;
   padding: 0;
 }
 
@@ -16,6 +16,10 @@
     "title details"
     "image paragraphs"
     "button paragraphs";
+}
+
+.places__container:last-child {
+  margin-bottom: 0;
 }
 
 .places__title {
@@ -128,5 +132,55 @@
   .places__paragraph {
     max-width: 352px;
     font-size: 16px;
+  }
+}
+
+/* viewports between 767px and 320px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .places {
+    max-width: 320px;
+  }
+
+  .places__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin: 0 auto;
+  }
+
+  .places__details {
+    max-width: 288px;
+    margin-left: 16px;
+  }
+
+  .places__title {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    margin: 50px 0 0 16px;
+  }
+
+  .places__subtitle,
+  .places__artist,
+  .places__paragraph,
+  .places__button {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
+  .places__paragraph {
+    font-size: 16px;
+  }
+
+  .places__paragraph:last-child {
+    padding-bottom: 0;
+  }
+
+  .places__paragraph:nth-child(3) {
+    margin-bottom: 0;
+  }
+
+  .places__button {
+    padding: 13px 40px;
   }
 }

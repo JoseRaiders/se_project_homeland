@@ -36,3 +36,10 @@
     grid-template-columns: repeat(2, 1fr); /* two equal-width columns */
   }
 }
+
+/* viewports between 767px and 320px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .gallery {
+    margin: 0 auto 12px;
+  }
+}
