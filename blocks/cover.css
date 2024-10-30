@@ -49,10 +49,6 @@
 
 .cover__address-span {
   display: block;
-  &::before {
-    content: attr(data-text);
-    padding: 1px 8px;
-  }
 }
 
 .cover__button {
@@ -80,7 +76,7 @@
 }
 
 /* viewports between 1279px and 768px wide */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .cover {
     background-size: cover;
     margin: 300px auto 0;
@@ -89,7 +85,7 @@
 }
 
 /* viewports between 767px and 320px wide */
-@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .cover {
     max-width: 320px;
     height: 254px;
